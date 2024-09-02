@@ -1,0 +1,56 @@
+{
+  "name": "@rn-flix/snackbar",
+  "version": "0.0.0",
+  "description": "⚡ Easy-to-use Snackbar for React Native, pure JS, no native, and zero-dependencies. ⚡",
+  "main": "dist/index.js",
+  "react-native": "./dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "source": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "lint": "eslint \"**/*.{js,ts,tsx}\"",
+    "release": "release-it",
+    "build": "tsc"
+  },
+  "release-it": {
+    "git": false,
+    "npm": {
+      "publish": true
+    },
+    "plugins": {
+      "@release-it/conventional-changelog": {
+        "preset": "angular",
+        "infile": "CHANGELOG.md"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flixyudh/flix-react-native.git"
+  },
+  "homepage": "https://github.com/flixyudh/flix-react-native/tree/main/packages/snackbar",
+  "keywords": [
+    "react-native",
+    "ios",
+    "android"
+  ],
+  "author": "Flix <flixy121@gmail.com> (https://github.com/flixyudh)",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
+  "devDependencies": {
+    "@types/react-native": "0.70.0"
+  },
+  "bugs": {
+    "url": "https://github.com/flixyudh/flix-react-native/issues"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,42 @@
+{
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules/*"
+  ],
+  "compilerOptions": {
+    "paths": {
+      "react-native-flix-snackbar": [
+        "./src/index"
+      ]
+    },
+    "allowJs": true,
+    "module": "es6",
+    "declaration": true,
+    "skipLibCheck": true,
+    "outDir": "dist",
+    "noImplicitAny": true,
+    "removeComments": true,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "jsx": "react",
+    "lib": [
+      "esnext"
+    ],
+    "moduleResolution": "node",
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "noImplicitUseStrict": false,
+    "noStrictGenericChecks": false,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "resolveJsonModule": true,
+    "strict": true,
+    "target": "esnext"
+  },
+  "extends": "expo/tsconfig.base"
+}

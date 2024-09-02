@@ -1,0 +1,57 @@
+{
+  "name": "flix-component",
+  "description": "List of React Native Component created by Flix",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "lint": "eslint \"**/*.{js,ts,tsx}\"",
+    "release": "yarn build && npm run release --workspaces && release-it",
+    "snackbar-example": "expo start packages/snackbar/example -w",
+    "build": "yarn workspaces foreach run build",
+    "prepare": "husky"
+  },
+  "author": "Flix <flixy121@gmail.com> (https://github.com/flixyudh)",
+  "eslintIgnore": [
+    "node_modules/",
+    "example",
+    "docs/",
+    "dist/"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.20.0",
+    "@expo/webpack-config": "^19.0.0",
+    "@react-native/eslint-config": "0.75.2",
+    "@release-it/conventional-changelog": "^5.0.0",
+    "babel-loader": "^8.1.0",
+    "babel-plugin-module-resolver": "^5.0.0",
+    "eslint": "^8.51.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "eslint-plugin-unused-imports": "2.0.0",
+    "expo": "~49.0.15",
+    "expo-status-bar": "~1.6.0",
+    "husky": "^9.1.5",
+    "jest": "^29.7.0",
+    "lint-staged": "^15.2.9",
+    "prettier": "^3.0.3",
+    "react": "18.3.1",
+    "react-dom": "18.2.0",
+    "react-native": "0.75.2",
+    "react-native-web": "~0.19.6",
+    "release-it": "^15.0.0",
+    "typescript": "^5.2.2"
+  },
+  "release-it": {
+    "git": {
+      "requireCleanWorkingDir": false
+    }
+  },
+  "packageManager": "yarn@3.6.1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/flixyudh/flix-react-native",
+  "homepage": "https://github.com/flixyudh/flix-react-native",
+  "license": "MIT",
+  "private": true
+}
