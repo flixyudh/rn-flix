@@ -1,10 +1,11 @@
 module.exports = {
   root: true,
   extends: ['@react-native', 'prettier'],
-  plugins: ['unused-imports'],
+  plugins: ['unused-imports', 'prettier'],
   rules: {
     'react-hooks/exhaustive-deps': 'off',
     'react-native/no-inline-styles': 'off',
+    'no-unused-vars': 'off',
     'unused-imports/no-unused-imports': 'error',
     'prettier/prettier': [
       'error',
