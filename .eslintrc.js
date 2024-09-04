@@ -18,4 +18,14 @@ module.exports = {
       },
     ],
   },
+  overrides: [
+    {
+      // Test files only
+      files: ['**/__tests__/**/*.[jt]s?(x)', 'jest.setup.js'],
+      extends: ['plugin:testing-library/react'],
+      rules: {
+        'no-undef': 'off',
+      },
+    },
+  ],
 };

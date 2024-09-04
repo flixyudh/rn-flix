@@ -5,10 +5,12 @@
     "packages/*"
   ],
   "scripts": {
+    "test": "jest",
     "lint": "lint-staged",
     "release": "yarn build && npm run release --workspaces && release-it",
     "snackbar-example": "expo start packages/snackbar/example -w",
     "build": "yarn workspaces foreach run build",
+    "coverage": "open -a \"Google Chrome\" ./coverage/index.html",
     "prepare": "husky"
   },
   "author": "Flix <flixy121@gmail.com> (https://github.com/flixyudh)",
@@ -20,14 +22,19 @@
   ],
   "devDependencies": {
     "@babel/core": "^7.20.0",
+    "@babel/runtime": "^7.25.6",
     "@expo/webpack-config": "^19.0.0",
     "@react-native/eslint-config": "0.75.2",
     "@release-it/conventional-changelog": "^5.0.0",
+    "@testing-library/react-native": "^12.6.1",
+    "@types/jest": "^29.5.5",
+    "@types/react": "^18.2.44",
     "babel-loader": "^8.1.0",
     "babel-plugin-module-resolver": "^5.0.0",
     "eslint": "^8.51.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-prettier": "^5.0.1",
+    "eslint-plugin-testing-library": "^6.3.0",
     "eslint-plugin-unused-imports": "^3.2.0",
     "expo": "~49.0.15",
     "expo-status-bar": "~1.6.0",
@@ -39,6 +46,7 @@
     "react-dom": "18.2.0",
     "react-native": "0.75.2",
     "react-native-web": "~0.19.6",
+    "react-test-renderer": "18.3.1",
     "release-it": "^15.0.0",
     "typescript": "^5.2.2"
   },

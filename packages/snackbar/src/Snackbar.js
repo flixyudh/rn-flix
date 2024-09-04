@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 import { Animated, StyleSheet, Text, TouchableOpacity } from 'react-native';
 
 let handleTimeout;
@@ -38,7 +38,7 @@ const Snackbar = ({
   hide,
   ...props
 }) => {
-  const animation = useRef(new Animated.Value(0)).current;
+  const animation = React.useRef(new Animated.Value(0)).current;
 
   const handleDuration = label ? 7000 : duration;
 
@@ -54,7 +54,7 @@ const Snackbar = ({
     ],
   };
 
-  const runAnimated = (toValue) => {
+  const runAnimation = (toValue) => {
     return Animated.timing(animation, {
       toValue,
       useNativeDriver: true,
@@ -62,16 +62,16 @@ const Snackbar = ({
     });
   };
 
-  useEffect(() => {
+  React.useEffect(() => {
     if (handleTimeout) clearTimeout(handleTimeout);
-    runAnimated(1).start();
+    runAnimation(1).start();
     if (handleDuration !== 0)
       handleTimeout = setTimeout(onHide, handleDuration);
   }, [handleDuration]);
 
-  const onHide = (cb) => {
-    runAnimated(0).start(() => {
-      cb?.();
+  const onHide = (callback) => {
+    runAnimation(0).start(() => {
+      callback?.();
       hide();
     });
     clearTimeout(handleTimeout);

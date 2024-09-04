@@ -1,16 +1,12 @@
 {
-  "include": [
-    "src/**/*"
-  ],
-  "exclude": [
-    "node_modules/*"
-  ],
+  "include": ["src/**/*"],
+  "exclude": ["node_modules/*"],
   "compilerOptions": {
-    "paths": {
-      "react-native-flix-snackbar": [
-        "./src/index"
-      ]
-    },
+    // "paths": {
+    //   "@rn-flix/snackbar": [
+    //     "./src/index"
+    //   ]
+    // },
     "allowJs": true,
     "module": "es6",
     "declaration": true,
@@ -23,9 +19,7 @@
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "jsx": "react",
-    "lib": [
-      "esnext"
-    ],
+    "lib": ["esnext"],
     "moduleResolution": "node",
     "noFallthroughCasesInSwitch": true,
     "noImplicitReturns": true,
@@ -37,6 +31,5 @@
     "resolveJsonModule": true,
     "strict": true,
     "target": "esnext"
-  },
-  "extends": "expo/tsconfig.base"
+  }
 }
