@@ -8,6 +8,7 @@
     "lint": "lint-staged",
     "release": "yarn build && npm run release --workspaces && release-it",
     "snackbar-example": "expo start packages/snackbar/example -w",
+    "auto-image-example": "expo start packages/auto-image/example -w",
     "build": "yarn workspaces foreach run build",
     "prepare": "husky"
   },
@@ -33,6 +34,7 @@
     "expo-status-bar": "~1.6.0",
     "husky": "^9.1.5",
     "jest": "^29.7.0",
+    "lerna": "^8.1.8",
     "lint-staged": "^15.2.9",
     "prettier": "^3.0.3",
     "react": "18.3.1",

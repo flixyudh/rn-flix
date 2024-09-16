@@ -5,6 +5,7 @@ module.exports = {
   rules: {
     'react-hooks/exhaustive-deps': 'off',
     'react-native/no-inline-styles': 'off',
+    'react/react-in-jsx-scope': 'off',
     'no-unused-vars': 'off',
     'unused-imports/no-unused-imports': 'error',
     'prettier/prettier': [
