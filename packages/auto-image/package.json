@@ -1,0 +1,56 @@
+{
+  "name": "@rn-flix/auto-image",
+  "version": "0.0.0",
+  "description": "⚡ Image with enhanced feature like auto scale image, loading, and more ⚡",
+  "main": "dist/index.js",
+  "react-native": "./dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "source": "src/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "lint": "eslint \"**/*.{js,ts,tsx}\"",
+    "release": "release-it",
+    "build": "tsc && cp src/errorImage.png dist/errorImage.png"
+  },
+  "release-it": {
+    "git": false,
+    "github": {
+      "release": true
+    },
+    "npm": {
+      "publish": true
+    },
+    "plugins": {
+      "@release-it/conventional-changelog": {
+        "preset": "angular",
+        "infile": "CHANGELOG.md"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flixyudh/flix-react-native.git"
+  },
+  "homepage": "https://github.com/flixyudh/flix-react-native/tree/main/packages/auto-image",
+  "keywords": [
+    "react-native",
+    "ios",
+    "android"
+  ],
+  "author": "Flix <flixy121@gmail.com> (https://github.com/flixyudh)",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
+  "bugs": {
+    "url": "https://github.com/flixyudh/flix-react-native/issues"
+  },
+  "license": "MIT"
+}
