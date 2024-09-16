@@ -29,9 +29,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/flixyudh/flix-react-native.git"
+    "url": "git+https://github.com/flixyudh/rn-flix.git"
   },
-  "homepage": "https://github.com/flixyudh/flix-react-native/tree/main/packages/snackbar",
+  "homepage": "https://github.com/flixyudh/rn-flix/tree/master/packages/snackbar",
   "keywords": [
     "react-native",
     "ios",

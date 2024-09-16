@@ -32,9 +32,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/flixyudh/flix-react-native.git"
+    "url": "git+https://github.com/flixyudh/rn-flix.git"
   },
-  "homepage": "https://github.com/flixyudh/flix-react-native/tree/main/packages/auto-image",
+  "homepage": "https://github.com/flixyudh/rn-flix/tree/master/packages/auto-image",
   "keywords": [
     "react-native",
     "ios",
