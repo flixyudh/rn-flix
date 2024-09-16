@@ -1,6 +1,6 @@
 {
   "name": "@rn-flix/snackbar",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "⚡ Easy-to-use Snackbar for React Native, pure JS, no native, and zero-dependencies. ⚡",
   "main": "dist/index.js",
   "react-native": "./dist/index.js",

@@ -1,6 +1,6 @@
 {
   "name": "@rn-flix/auto-image",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "⚡ Image with enhanced feature like auto scale image, loading, and more ⚡",
   "main": "dist/index.js",
   "react-native": "./dist/index.js",
