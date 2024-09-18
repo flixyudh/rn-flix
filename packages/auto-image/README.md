@@ -23,7 +23,7 @@ import AutoImage from '@rn-flix/auto-image';
 
 const App = () => {
   return (
-    <AutoImage source={{ uri: 'https://example.com/image.jpg' }} width={300} />
+    <AutoImage source={{ uri: 'https://picsum.photos/400/200' }} width={300} />
   );
 };
 ```
@@ -49,11 +49,9 @@ import AutoImage from '@rn-flix/auto-image';
 const App = () => {
   return (
     <AutoImage
-      source={{ uri: 'https://example.com/image.jpg' }}
+      source={{ uri: 'https://picsum.photos/400/200' }}
       width={300}
-      height={200}
       style={{ borderRadius: 10 }}
-      loadingWaterDrop={true}
     />
   );
 };
