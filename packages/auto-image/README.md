@@ -4,7 +4,7 @@
 
 ## Description
 
-Auto Image is a React Native component that automatically scales images to fit the screen while maintaining their aspect ratio. It also provides a loading indicator and error handling.
+AutoImage is a React Native component that automatically scales images to fit the screen while maintaining their aspect ratio. It also provides a loading indicator and error handling.
 
 ## Installation
 
