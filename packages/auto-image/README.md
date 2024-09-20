@@ -22,9 +22,7 @@ To use Auto Image, import the component and pass the image source as a prop:
 import AutoImage from '@rn-flix/auto-image';
 
 const App = () => {
-  return (
-    <AutoImage source={{ uri: 'https://picsum.photos/400/200' }} width={300} />
-  );
+  return <AutoImage source="https://picsum.photos/400/200" width={300} />;
 };
 ```
 
@@ -32,7 +30,7 @@ const App = () => {
 
 The following props are available:
 
-- `source`: The image source (required)
+- `source`: The image source either require or url directly (required)
 - `width`: The width of the image (optional)
 - `height`: The height of the image (optional)
 - `style`: Custom styles for the image (optional)
@@ -49,7 +47,7 @@ import AutoImage from '@rn-flix/auto-image';
 const App = () => {
   return (
     <AutoImage
-      source={{ uri: 'https://picsum.photos/400/200' }}
+      source="https://picsum.photos/400/200"
       width={300}
       style={{ borderRadius: 10 }}
     />
