@@ -52,8 +52,8 @@
   "packageManager": "yarn@3.6.1",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/flixyudh/flix-react-native",
-  "homepage": "https://github.com/flixyudh/flix-react-native",
+  "repository": "https://github.com/flixyudh/rn-flix",
+  "homepage": "https://github.com/flixyudh/rn-flix",
   "license": "MIT",
   "private": true
 }

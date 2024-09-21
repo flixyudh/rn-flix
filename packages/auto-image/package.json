@@ -50,7 +50,7 @@
     "react-native": "*"
   },
   "bugs": {
-    "url": "https://github.com/flixyudh/flix-react-native/issues"
+    "url": "https://github.com/flixyudh/rn-flix/issues"
   },
   "license": "MIT"
 }

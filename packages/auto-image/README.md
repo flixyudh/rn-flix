@@ -61,8 +61,8 @@ Auto Image is licensed under the MIT License.
 
 ## Author
 
-Auto Image was created by [Flix](https://github.com/zxccvvv).
+Auto Image was created by [Flix](https://github.com/flixyudh).
 
 ## Bugs and Issues
 
-If you encounter any bugs or issues, please report them on the [issue tracker](https://github.com/flixyudh/flix-react-native/issues).
+If you encounter any bugs or issues, please report them on the [issue tracker](https://github.com/flixyudh/rn-flix/issues).
