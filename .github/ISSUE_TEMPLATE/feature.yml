@@ -20,7 +20,7 @@ body:
     id: description
     attributes:
       label: 'Description'
-      description: Please enter an explicit description of the feature requ.
-      placeholder: Short and explicit description of your incident...
+      description: Please enter an explicit description of the feature.
+      placeholder: description of feature you want to add in this request...
     validations:
       required: true
