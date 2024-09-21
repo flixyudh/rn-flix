@@ -1,0 +1,26 @@
+name: '✨ Feature Request'
+description: Create a new ticket for a feature.
+title: '✨ [Feature] '
+labels: ['enhancement']
+body:
+  - type: markdown
+    attributes:
+      value: '# Thanks for taking the time to fill out the feature request.'
+  - type: checkboxes
+    id: packages
+    attributes:
+      label: Which packages you want to add a feature?
+      description: You may select more than one.
+      options:
+        - label: '@rn-flix/auto-image'
+        - label: '@rn-flix/snackbar'
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: 'Description'
+      description: Please enter an explicit description of the feature requ.
+      placeholder: Short and explicit description of your incident...
+    validations:
+      required: true
