@@ -9,7 +9,8 @@ A monorepo for react-native libraries.
 
 ### TODO List
 
-- [ ] documentation for each packages
+- [ ] documentation for each packages (WIP)
+- [ ] add unit testing for each component
 
 ## Contributing
 
