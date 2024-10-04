@@ -18,19 +18,19 @@
 ## Installation
 
 ```bash
-npm install @rn-flix/auto-image
+npm install @rn-flix/snackbar
 # or
-yarn add @rn-flix/auto-image
+yarn add @rn-flix/snackbar
 ```
 
 ## Usage
 
-Wrap your root component in `SnackbarProvider` from `@rn-flix/auto-image`. This will usually be in the `index.js` or `App.js` file. If you have an Expo project, you can do this inside the exported component in the `App.js` file.
+Wrap your root component in `SnackbarProvider` from `@rn-flix/snackbar`. This will usually be in the `index.js` or `App.js` file. If you have an Expo project, you can do this inside the exported component in the `App.js` file.
 
 Example:
 
 ```js
-import { SnackbarProvider } from '@rn-flix/auto-image';
+import { SnackbarProvider } from '@rn-flix/snackbar';
 
 export default function App() {
   return (
@@ -48,7 +48,7 @@ export default function App() {
 ```js
 import React from 'react';
 import { View, TouchableOpacity, Text } from 'react-native';
-import { useSnackbar } from '@rn-flix/auto-image';
+import { useSnackbar } from '@rn-flix/snackbar';
 
 export default MainApp = (props) => {
   const { show } = useSnackbar();
@@ -59,7 +59,6 @@ export default MainApp = (props) => {
       <TouchableOpacity onPress={() => show('Hi snackbar!')}>
         <Text>Open Snackbar</Text>
       </TouchableOpacity>
-      ;
     </View>
   );
 };
@@ -70,7 +69,7 @@ export default MainApp = (props) => {
 ```js
 import React from 'react';
 import { Text, TouchableOpacity, View } from 'react-native';
-import { SnackbarProvider, useSnackbar } from '@rn-flix/auto-image';
+import { SnackbarProvider, useSnackbar } from '@rn-flix/snackbar';
 
 const Example = (props) => {
   const { show } = useSnackbar();
@@ -143,7 +142,7 @@ export default function App() {
 ## SnackbarProvider
 
 ```js
-import { SnackbarProvider } from '@rn-flix/auto-image';
+import { SnackbarProvider } from '@rn-flix/snackbar';
 ```
 
 The `<SnackbarProvider>` component makes [`useSnackbar`](#usesnackbar) hook available to any nested component that need to show snackbar.
@@ -151,7 +150,7 @@ The `<SnackbarProvider>` component makes [`useSnackbar`](#usesnackbar) hook avai
 > `<SnackbarProvider>` doesn't need any props to passed, so you can easily use it in root component like this:
 
 ```js
-import { SnackbarProvider } from '@rn-flix/auto-image';
+import { SnackbarProvider } from '@rn-flix/snackbar';
 
 export default function App() {
   return (
@@ -165,7 +164,7 @@ export default function App() {
 ## useSnackbar
 
 ```js
-import { useSnackbar } from '@rn-flix/auto-image';
+import { useSnackbar } from '@rn-flix/snackbar';
 ```
 
 `useSnackbar` is a hook to automatically handle Snackbar component either to show or hide, it return [`show`](#show-method) and [`hide`](#hide-method) function
@@ -174,7 +173,7 @@ import { useSnackbar } from '@rn-flix/auto-image';
 
 ```js
 // other import
-import { useSnackbar } from '@rn-flix/auto-image';
+import { useSnackbar } from '@rn-flix/snackbar';
 
 export default MainApp = (props) => {
   const { show } = useSnackbar();
@@ -184,7 +183,6 @@ export default MainApp = (props) => {
       <TouchableOpacity onPress={() => show('Hi snackbar!')}>
         <Text>Open Snackbar</Text>
       </TouchableOpacity>
-      ;
     </View>
   );
 };
