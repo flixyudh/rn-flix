@@ -13,6 +13,10 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+      contents: read
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -27,16 +31,17 @@ jobs:
         run: yarn install --immutable
 
       - name: Run Jest Tests
-        id: test
-        run: yarn test
+        run: yarn test --coverageReporters="json-summary" --coverageReporters="text"
 
-      - name: Upload Coverage Summary
-        if: always()
-        run: |
-          echo "## Test Coverage Summary 🚀" >> $GITHUB_STEP_SUMMARY
-          echo "<details><summary>Click to expand</summary>" >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
-          echo '```text' >> $GITHUB_STEP_SUMMARY
-          yarn test --coverageReporters="text-summary" >> $GITHUB_STEP_SUMMARY
-          echo '```' >> $GITHUB_STEP_SUMMARY
-          echo "</details>" >> $GITHUB_STEP_SUMMARY
+      - name: Jest Coverage Comment
+        if: always() && github.event_name == 'pull_request'
+        uses: MishaKav/jest-coverage-comment@main
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          coverage-summary-path: ./coverage/coverage-summary.json
+          title: "Test Coverage Report 🚀"
+          badge-title: "Coverage"
+          hide-comment: false
+          create-new-comment: false
+          hide-summary: false
+          remove-deprecated-reports: true
