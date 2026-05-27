@@ -6,6 +6,7 @@ import {
   TextStyle,
   TouchableOpacity,
   View,
+  ViewStyle,
 } from 'react-native';
 
 let handleTimeout: NodeJS.Timeout;
@@ -33,6 +34,8 @@ export interface SnackbarData {
   hide: () => void;
   /** Custom element to display on the left of the message (optional) */
   icon?: React.ReactNode
+  /** Custom style for the container (optional) */
+  containerStyle?: ViewStyle
 }
 
 /**
@@ -55,6 +58,7 @@ const Snackbar: React.FC<SnackbarData> = ({
   icon,
   id,
   hide,
+  containerStyle
 }) => {
   const animation = useRef(new Animated.Value(0)).current;
 
@@ -108,6 +112,7 @@ const Snackbar: React.FC<SnackbarData> = ({
           flexDirection: label ? 'row' : 'column',
           borderRadius: 4,
         },
+        containerStyle,
         styleAnimation as any,
       ]}
     >

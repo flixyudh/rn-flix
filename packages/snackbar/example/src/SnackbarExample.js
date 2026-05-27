@@ -38,6 +38,16 @@ const Example = (props) => {
           icon: <Text style={{ fontSize: 20 }}>🚀</Text>,
         }),
     },
+    {
+      title: 'Snackbar with custom contaier style',
+      onPress: () =>
+        show('Custom bottom position!', {
+          containerStyle: {
+            bottom:80
+          },
+          icon: <Text style={{ fontSize: 20 }}>🚀</Text>,
+        }),
+    },
   ];
 
   return (
